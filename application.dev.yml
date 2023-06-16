@@ -1,0 +1,61 @@
+server:
+  port: 9527
+  salt: abcdef
+  crontab: 1
+core:
+  host: ""
+logger:
+  file_path : './logs/'
+  file_name : 'app.log'
+  max_size : 10
+  max_age : 2
+  max_backups : 1
+db:
+  uri: 'xx9'
+  username: 'root'
+  pwd: ''
+  dbname: ''
+redis:
+  host: '127.0.0.1:6379'
+  password: ''
+  db: 0
+aliyun_oss:
+  region: "xx"
+  endpoint: 'xxx'
+  access_key_id: 'xxx'
+  access_secret: 'xx'
+  bucket_name: 'xxx'
+  public_bucket_name: 'xxxx'
+  oss_url : "xxxx"
+aliyun_sms:
+  access_key_id: "xxx"
+  access_key_secret: "xxx"
+  sms_sign_name: "xxx"
+  template_code: "xxx"
+  template_param_key: "xxx"
+upload:
+  file_path: './upload/'
+payment_callback:
+  wechat : "xx"
+  alipay : "xx"
+
+jwt:
+  jwt_secret: 'L4pU2nUBsVdrqSgYIwG92RCND6q4Pe1t'
+  jwt_excuse : ['/user/login/code','/v1/user/login']
+
+wechat:
+  pay:
+    mch_id: xx #商户号
+    merchant_serial_number: xx #api证书序列号
+    api_v3_key: xx
+  miniprogram:
+    app_id: "xx"  #小程序appid  线上：wx348d89405a73d3e0 测试：wx7adc4b67f1398079
+    app_secret: "xxxx"  #小程序appSecret 线上：a402f35240bf905fbca6a8323b070492 测试：1b77b65a31f2f1087ef383d7bc7e0fc7
+  app:
+    app_id: xx
+    app_secret: xx
+
+alipay:
+  app_id: "xxx"
+  app_private_key: "xx"
+  alipay_public_key: "xxx"
